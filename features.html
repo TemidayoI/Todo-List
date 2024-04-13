@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/ac5d95c227.js" crossorigin="anonymous"></script>  
+</head>
+<body>
+    <main>
+        <div class="todos">
+            <nav id="todos-nav">
+                <button data-filter="all" class="active"><i class="fa-solid fa-box-archive"></i>All</button>
+                <button data-filter="today"><i class="fa-solid fa-calendar-days"></i>Today</button>
+                <button data-filter="Personal"><i class="fa-solid fa-circle-user"></i>Personal</button>
+                <button data-filter="Business"><i class="fa-solid fa-business-time"></i>Business</button>
+                <button data-filter="scheduled"><i class="fa-solid fa-clock"></i>Scheduled</button>
+                <button data-filter="pending"><i class="fa-regular fa-circle"></i>Pending</button>
+                <button data-filter="completed"><i class="fa-solid fa-circle-check"></i>Completed</button> 
+            </nav>
+
+            <form id="add-todo-form">
+                <input type="text" name="todo-text" id="todo-text" placeholder="Todo...."required>
+                <input type="date" name="todo-date" id="todo-date" required>
+                <button id="add-todo-btn" class="active" type="submit">Add</button>
+            </form>
+
+            <ul id="todos-list">
+
+            </ul> 
+        </div> 
+    </main>
+
+    <script type="module" src="main.js"></script> 
+</body>
+</html>
